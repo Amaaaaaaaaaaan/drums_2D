@@ -1,3 +1,6 @@
+
+//this object below contains the default key associated with each instrument this will be dynamically changed
+// as per the user wish
 const keyMapping = {
     bass_drum: 'W',
     bottom_left_hat: 'A',
@@ -19,6 +22,11 @@ const validateKeyMapping = (key, value) => {
 };
 
 // Function to update key mapping from HTML elements
+
+
+
+// the below object is used for the keys changing basically getting and setting the keys and performs 
+// validation whether the field has a valid input or not
 const updateKeyMapping = () => {
     const elements = {
         bass_drum: document.getElementById('bass_drum').value.toUpperCase(),
@@ -40,9 +48,10 @@ const updateKeyMapping = () => {
 };
 
 // Start Tone.js context on first user interaction
-Tone.start();
+
 
 document.addEventListener('keydown', event => {
+    Tone.start();
     const key = event.key.toUpperCase();
     const soundMap = {
         [keyMapping.bass_drum]: "drum_ios_audio/bass_drum.unknown",
@@ -56,6 +65,7 @@ document.addEventListener('keydown', event => {
     };
 
     if (soundMap[key]) {
+        
         console.log(`Key pressed is ${event.key}`);
         const player = new Tone.Player(soundMap[key]).toDestination();
         player.autostart = true;
