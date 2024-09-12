@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    padding-top: 50px;
+    transition: background-color 0.3s ease;
+}
+input[type="text"] {
+    margin: 10px;
+    padding: 5px;
+}
+button {
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}

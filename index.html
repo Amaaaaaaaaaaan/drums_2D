@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form id="keyMappingForm">
+        <label for="bass_drum">Key for bass drum:</label>
+        <input type="text" id="bass_drum" placeholder="default: A" maxlength="1">
+        <br>
+
+        <label for="bottom_left_hat">Key for bottom left hat:</label>
+        <input type="text" id="bottom_left_hat" placeholder="default: S" maxlength="1">
+        <br>
+
+        <label for="center_left_drum">Key for center left drum:</label>
+        <input type="text" id="center_left_drum" placeholder="default: W" maxlength="1">
+        <br>
+
+        <label for="center_right_drum">Key for center right drum:</label>
+        <input type="text" id="center_right_drum" placeholder="default: D" maxlength="1">
+        <br>
+
+        <label for="hat_bass">Key for hat + bass:</label>
+        <input type="text" id="hat_bass" placeholder="default: Q" maxlength="1">
+        <br>
+
+        <label for="left_bottom">Key for left bottom:</label>
+        <input type="text" id="left_bottom" placeholder="default: E" maxlength="1">
+        <br>
+
+        <label for="right_bottom_drum">Key for right bottom drum:</label>
+        <input type="text" id="right_bottom_drum" placeholder="default: R" maxlength="1">
+        <br>
+
+        <label for="right_cymbal">Key for right cymbal:</label>
+        <input type="text" id="right_cymbal" placeholder="default: F" maxlength="1">
+        <br>
+
+        <button type="button" onclick="updateKeyMapping()">Save Key Mapping</button>
+    </form>
+
+
+
+</body>
+<script src="http://unpkg.com/tone"></script>
+<script src="script.js"></script>
+</html>
