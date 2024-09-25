@@ -1,5 +1,4 @@
 import * as Tone from 'tone';
-
 //this object below contains the default key associated with each instrument this will be dynamically changed
 // as per the user wish
 const keyMapping = {
