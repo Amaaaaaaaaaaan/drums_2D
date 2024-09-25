@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>virtual drums</title>
         <link rel="stylesheet" href="style.css">
-        <script src="https://unpkg.com/tone"></script>
+        <script src="node_modules/tone/build/Tone.js"></script>
+        <!-- <script src="https://unpkg.com/tone"></script> -->
 </head>
 <body>
     
@@ -35,7 +36,7 @@
         <br>
 
         <label for="right_bottom_drum">Key for right bottom drum:</label>
-        <input type="text" id="right_bottom_drum" placeholder="default: R" maxlength="1">
+        <input type="text" id="rigl̥ōht_bottom_drum" placeholder="default: R" maxlength="1">
         <br>
 
         <label for="right_cymbal">Key for right cymbal:</label>
@@ -48,5 +49,6 @@
 
 
 </body>
-<script src="script.js"></script>
+<script type="module" src="./src/index.js"></script>
+<script type="module" src="./dist/main.js"></script>
 </html>
